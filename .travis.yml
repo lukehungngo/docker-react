@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -f Dockerfile.dev -t hungngoautonomous/docker-react .
 scripts:
-  - docker run -e CI=true hungngoautonomous/docker-react npm run test -- --coverage
+  - docker run hungngoautonomous/docker-react npm run test -- --coverage
