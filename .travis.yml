@@ -7,15 +7,15 @@ before_install:
 script:
 - docker run -e CI=true hungngoautonomous/docker-react npm run test -- --coverage
 deploy:
-  # provider: heroku
-  # api_key:
-  #   secure: uBjR8uoEl0qZ70Kyj47ZH5GhUCYAx1YODrWOeiEnnvwx1/JailuA0cpKIw53P3VwxlkP7Z6prvGUWgsvjiiAdgbxn9YU1MIN7cPkwLFzJciO+BqRoS8CXrxvjTrcz00YfQeq7eWTyhvq9fv90Lqk3ZOAFEK8g5XuQk0zgK1WJtkfUwM4fW2Bivs37GnXM6Eh/safaQ7Ku8G5W5lsv7lV5UgSyf1FGbVHUyZf8XtD6NaqFi+T6cNXKB/PUadPDCUNa2EOPn265tTXl2Tm337fZQPFImogJ9BCxPVC2E1dVvkXIFHoRsVw8/Gz2uhdWG5b7aw+sTw34FRvEPqvFhyHJQBu7Lay5D4CKvqdJeHkjBhXB4SNoDSXKJtCPURsZHct3UjnwKL2HE9mQU3UePL8i0uwg62L3qfjCVuuhnTb59wlRTzka76vur6M1KgQBGIFlZnoE4y6J+LBaBsCugixJC8LChM98HMduBf7bfYi0xQ3o5abqhjY+X3ZklYf6VERxoJvaJ43svvKycwanYr0BVc4DmAb2gZE60eHQsuby8971OmnfhJqJh+8qUKCxLyXDBn9pRgJFzP0wyabKUlrfWBqP2zRaUvYspuIH8vZ02Yysy2LjWa/ZEmvQKLDU28bFkwHZIhsFeUOlhpZ9kTWu4DOCYa+cgCm3VjZz95+itc=
-  # app: hungngo-docker-react
-  provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "docker-react"
-  env: "DockerReact-env"
-  bucket_name: "elasticbeanstalk-us-east-2-889622348088"
-  bucket_path: "docker-react"
-  on:
-    branch: master
+  provider: heroku
+  api_key:
+    secure: uBjR8uoEl0qZ70Kyj47ZH5GhUCYAx1YODrWOeiEnnvwx1/JailuA0cpKIw53P3VwxlkP7Z6prvGUWgsvjiiAdgbxn9YU1MIN7cPkwLFzJciO+BqRoS8CXrxvjTrcz00YfQeq7eWTyhvq9fv90Lqk3ZOAFEK8g5XuQk0zgK1WJtkfUwM4fW2Bivs37GnXM6Eh/safaQ7Ku8G5W5lsv7lV5UgSyf1FGbVHUyZf8XtD6NaqFi+T6cNXKB/PUadPDCUNa2EOPn265tTXl2Tm337fZQPFImogJ9BCxPVC2E1dVvkXIFHoRsVw8/Gz2uhdWG5b7aw+sTw34FRvEPqvFhyHJQBu7Lay5D4CKvqdJeHkjBhXB4SNoDSXKJtCPURsZHct3UjnwKL2HE9mQU3UePL8i0uwg62L3qfjCVuuhnTb59wlRTzka76vur6M1KgQBGIFlZnoE4y6J+LBaBsCugixJC8LChM98HMduBf7bfYi0xQ3o5abqhjY+X3ZklYf6VERxoJvaJ43svvKycwanYr0BVc4DmAb2gZE60eHQsuby8971OmnfhJqJh+8qUKCxLyXDBn9pRgJFzP0wyabKUlrfWBqP2zRaUvYspuIH8vZ02Yysy2LjWa/ZEmvQKLDU28bFkwHZIhsFeUOlhpZ9kTWu4DOCYa+cgCm3VjZz95+itc=
+  app: hungngo-docker-react
+  # provider: elasticbeanstalk
+  # region: "us-east-2"
+  # app: "docker-react"
+  # env: "DockerReact-env"
+  # bucket_name: "elasticbeanstalk-us-east-2-889622348088"
+  # bucket_path: "docker-react"
+  # on:
+  #   branch: master
